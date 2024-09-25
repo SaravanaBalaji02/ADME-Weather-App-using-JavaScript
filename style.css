@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-image: url('bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 400px;
+    background-color: rgba(137, 145, 138, 0.9);
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.header {
+    margin-bottom: 20px;
+}
+
+.search-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e6f5fb;
+    border-radius: 14px;
+    padding: 5px;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.search-box input {
+    width: 80%;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    color: #333;
+    background: transparent;
+}
+
+.search-box input::placeholder {
+    color: #666;
+}
+
+.search-btn {
+    width: 40px;
+    height: 40px;
+    background-color: #e6f5fb;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.search-btn img {
+    width: 24px;
+    height: 24px;
+}
+
+.search-btn:hover {
+    background-color: #d1e0e5;
+}
+
+.location-not-found {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.location-not-found h1 {
+    font-size: 18px;
+    color: #e74c3c;
+    margin-bottom: 10px;
+}
+
+.location-not-found img {
+    width: 50%;
+}
+
+.weather-body {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.weather-body img {
+    width: 50%;
+    margin-bottom: 10px;
+}
+
+.weather-box {
+    margin-bottom: 20px;
+}
+
+.weather-box .temperature {
+    font-size: 48px;
+    font-weight: bold;
+    color: #3498db;
+}
+
+.weather-box .temperature sup {
+    font-size: 24px;
+    top: -10px;
+    position: relative;
+}
+
+.weather-box .description {
+    font-size: 18px;
+    color: #555;
+}
+
+.weather-details {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.humidity, .wind {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.weather-details i {
+    font-size: 36px;
+    color: #3498db;
+    margin-bottom: 5px;
+}
+
+.weather-details .text {
+    font-size: 16px;
+    color: #555;
+}
+
+.text span {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}
